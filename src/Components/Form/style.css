@@ -1,0 +1,114 @@
+/* *{
+    overflow-y: visible;
+} */
+
+.mainForm{
+    margin-top: 5.0rem;
+    display: grid;
+    place-content: start;
+    overflow-x: visible;
+    padding-inline: 10.0rem;
+   
+}
+
+.input-container{
+width: 40.0rem;
+position: relative;
+overflow-x: visible;
+}
+
+.lable{
+    position: absolute;
+    left: 3.57%;
+    right: 5%;
+    top: 30%;
+    transition: all 0.2s;
+    padding: 0 2px;
+    font-size: 1.8rem;
+    z-index: 1;
+    color: black;
+    overflow-x: visible;
+}
+
+.text-input{
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    border: 2px solid grey;
+    background: transparent;
+    border-radius:5px;
+    font-size: 18px;
+    outline: none;
+    transition: all 0.3s;
+    color: black;
+    overflow-x: visible;
+}
+
+.lable::before{
+    content: "";
+    height: 2px;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    top: 13px;
+    width: 23%;
+    z-index: -1;
+    overflow-x: visible;
+}
+
+.text-input:focus{
+    border: 2px solid blue;
+    background-color: aliceblue;
+    color: black;
+}
+
+.text-input:focus+.lable::before{
+    background: aliceblue;
+}
+
+
+.text-input:focus+.lable,.filled{
+    top: -13px;
+    color: blue;
+}
+
+.text-input::placeholder{
+    font-size: 16px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.text-input:focus::placeholder{
+    opacity: 1;
+    animation-delay: 0.2s;
+    
+}
+
+.form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5.0rem;
+    padding-top: 2.0rem;
+}
+
+.Frm-btn-row{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 1.0rem;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 2.0rem;
+}
+
+.frm-btn{
+    height: 4rem;
+    width: 15rem;
+    border-radius: 15px;
+    background-color: orange;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}

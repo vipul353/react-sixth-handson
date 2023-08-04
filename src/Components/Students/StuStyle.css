@@ -1,0 +1,61 @@
+*{
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+
+.main {
+  padding: 5rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stu {
+  font-size: 3.0rem;
+  font-weight: 700;
+  color: black;
+}
+
+.btn{
+    width: 20rem;
+    height: 4rem;
+    border-radius: 10px;
+    background-color: aliceblue;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+}
+
+.table{
+    margin-top:1.0rem ;
+    width: 100%;
+    height: auto;
+    background: white;
+    border-collapse: collapse;
+    font-size: 1.7rem;
+    color: black;
+    border-radius: 10px;
+}
+
+th, td {
+    /* border-top: 1px solid grey; */
+    border-bottom: 1px solid grey;
+    border-right: none;
+    border-left: none;
+    padding: 2.2rem;
+    text-align: center;
+  }
+
+
+  @media screen and (max-width:425px) {
+    html {
+      font-size: 33.5%;
+    }
+  }
