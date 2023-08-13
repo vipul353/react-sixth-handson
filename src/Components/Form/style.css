@@ -112,3 +112,28 @@ overflow-x: visible;
     font-weight: 500;
 
 }
+
+
+@media screen and (max-width:450px) {
+    .mainForm{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 5.0rem;
+        padding-top: 2.0rem;
+    }
+
+    .input-container{
+        width: 38rem;
+        position: relative;
+        overflow-x: visible;
+    }
+
+    .form{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 5.0rem;
+        padding-top: 2.0rem;
+    }
+}
